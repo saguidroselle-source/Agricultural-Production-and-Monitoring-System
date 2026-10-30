@@ -1,0 +1,6 @@
+<template id="dashboard-index-view">
+  <section class="module-view" data-module-view="dashboard">
+    <header class="record-toolbar"><div><span class="eyebrow green">BONGABONG MAO</span><h2>Agriculture Operations Dashboard</h2><p class="muted">Municipal agricultural operations overview and performance indicators.</p></div></header>
+    <div class="panel"><h3>Dashboard indicators</h3><p>Registered farmers, production volume, harvests, livestock, fisheries, field incidents, inventory, assistance, equipment, and budget utilization.</p></div>
+  </section>
+</template>

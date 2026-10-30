@@ -1,0 +1,6 @@
+<template id="farmers-show-view">
+  <section class="module-view" data-module-view="farmers" data-view="show">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Farmer & Farm Registry</h2><p class="muted">Farmer profiles, household information, farm locations, landholding details, and registration status.</p></div></header>
+    <dl class="detail-grid"><dt>Farmer profile</dt><dd>View complete farmer and farm registration details.</dd><dt>Farm information</dt><dd>Barangay, location, area, tenure, and commodities.</dd></dl>
+  </section>
+</template>

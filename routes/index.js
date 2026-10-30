@@ -1,0 +1,26 @@
+import express from 'express';
+import { login,register,logout } from '../controllers/authController.js';
+import dashboardRoutes from './dashboardRoutes.js';
+import farmerRoutes from './farmerRoutes.js';
+import productionRoutes from './productionRoutes.js';
+import inventoryRoutes from './inventoryRoutes.js';
+import assistanceRoutes from './assistanceRoutes.js';
+import equipmentRoutes from './equipmentRoutes.js';
+import budgetRoutes from './budgetRoutes.js';
+const router=express.Router();
+const auth=(req,res,next)=>req.session.user?next():res.status(401).json({message:'Please sign in to continue.'});
+router.get('/api/session',(req,res)=>res.json({user:req.session.user||null}));
+router.post('/api/auth/login',login); router.post('/api/auth/register',register); router.post('/api/auth/logout',logout);
+router.use('/api/dashboard',dashboardRoutes(auth));
+router.use('/api/farmers',farmerRoutes(auth));
+router.use('/api/production',productionRoutes(auth));
+router.use('/api/inventory',inventoryRoutes(auth));
+router.use('/api/assistance',assistanceRoutes(auth));
+router.use('/api/equipment',equipmentRoutes(auth));
+router.use('/api/budget',budgetRoutes(auth));
+// Supporting APMS records remain available through the same protected CRUD API.
+import { createResourceController } from '../controllers/resourceController.js';
+import { createResourceRouter } from './helpers.js';
+for (const resource of ['livestock','fisheries','incidents']) router.use(`/api/${resource}`,createResourceRouter(createResourceController(resource),auth));
+router.get('*',(req,res)=>res.render('layouts/main'));
+export default router;

@@ -1,0 +1,6 @@
+<template id="inventory-index-view">
+  <section class="module-view" data-module-view="inventory" data-view="index">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Agricultural Inventory & Supply</h2><p class="muted">Agricultural inputs, seeds, fertilizers, supplies, warehouse locations, stock movements, and reorder alerts.</p></div></header>
+    <div class="panel"><div class="table-tools"><div class="search-box"><input placeholder="Search inventory..." /></div><span class="record-count">Module records</span></div><div class="table-wrap"><table><thead><tr><th>Item name</th><th>Category</th><th>Quantity on hand</th><th>Unit</th><th>Reorder level</th><th>Storage location</th><th>Actions</th></tr></thead><tbody><tr><td colspan="7">No records to display in this view yet. Use the module workspace to add records.</td></tr></tbody></table></div></div>
+  </section>
+</template>

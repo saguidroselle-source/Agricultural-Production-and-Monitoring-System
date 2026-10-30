@@ -1,0 +1,5 @@
+import bcrypt from 'bcryptjs';
+import { User } from '../models/index.js';
+export const login = async (req,res) => { const {email,password}=req.body; const user=await User.findOne({where:{email}}); if(!user || !(await bcrypt.compare(password,user.password))) return res.status(401).json({message:'Invalid email or password.'}); req.session.user={id:user.id,name:user.name,email:user.email,role:user.role}; res.json({user:req.session.user}); };
+export const register = async (req,res) => { const {name,email,password}=req.body; if(!name||!email||!password||password.length<8) return res.status(400).json({message:'Name, valid email, and password (8+ characters) are required.'}); const exists=await User.findOne({where:{email}}); if(exists) return res.status(409).json({message:'Email is already registered.'}); const user=await User.create({name,email,password:await bcrypt.hash(password,12)}); req.session.user={id:user.id,name:user.name,email:user.email,role:user.role}; res.status(201).json({user:req.session.user}); };
+export const logout=(req,res)=>req.session.destroy(()=>res.json({ok:true}));

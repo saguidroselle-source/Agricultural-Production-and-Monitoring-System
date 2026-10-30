@@ -1,0 +1,6 @@
+<template id="budget-procurement-view">
+  <section class="module-view" data-module-view="budget" data-view="procurement">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Agricultural Budget & Procurement — Procurement</h2><p class="muted">Annual appropriations, fund sources, procurement plans, obligations, disbursements, and expenditure reports.</p></div></header>
+    <div class="panel"><h3>Procurement records</h3><p>Annual appropriations, fund sources, procurement plans, obligations, disbursements, and expenditure reports.</p><div class="table-wrap"><table><thead><tr><th>Fiscal year</th><th>Fund source</th><th>Project / activity</th><th>Allocated amount</th><th>Obligated amount</th></tr></thead><tbody><tr><td colspan="5">Records will be displayed here.</td></tr></tbody></table></div></div>
+  </section>
+</template>

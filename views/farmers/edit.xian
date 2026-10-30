@@ -1,0 +1,6 @@
+<template id="farmers-edit-view">
+  <section class="module-view" data-module-view="farmers" data-view="edit">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Farmer & Farm Registry</h2><p class="muted">Farmer profiles, household information, farm locations, landholding details, and registration status.</p></div></header>
+    <form class="module-form"><div class="form-grid"><label class="field">Farmer name<input name="farmer_name" /></label><label class="field">Sex<input name="sex" /></label><label class="field">Birth date<input name="birth_date" /></label><label class="field">Contact number<input name="contact_number" /></label><label class="field">Barangay<input name="barangay" /></label><label class="field">Sitio / Purok<input name="sitio_purok" /></label><label class="field">Farm area (hectares)<input name="farm_area_hectares" /></label><label class="field">Farm ownership<input name="farm_ownership" /></label><label class="field">Farm type<input name="farm_type" /></label><label class="field">Primary commodity<input name="primary_commodity" /></label></div><div class="modal-actions"><button type="submit" class="btn primary">Save record</button></div></form>
+  </section>
+</template>

@@ -1,0 +1,6 @@
+<template id="inventory-create-view">
+  <section class="module-view" data-module-view="inventory" data-view="create">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Agricultural Inventory & Supply</h2><p class="muted">Agricultural inputs, seeds, fertilizers, supplies, warehouse locations, stock movements, and reorder alerts.</p></div></header>
+    <form class="module-form"><div class="form-grid"><label class="field">Item name<input name="item_name" /></label><label class="field">Category<input name="category" /></label><label class="field">Quantity on hand<input name="quantity_on_hand" /></label><label class="field">Unit<input name="unit" /></label><label class="field">Reorder level<input name="reorder_level" /></label><label class="field">Storage location<input name="storage_location" /></label><label class="field">Supplier<input name="supplier" /></label><label class="field">Last stock update<input name="last_stock_update" /></label></div><div class="modal-actions"><button type="submit" class="btn primary">Save record</button></div></form>
+  </section>
+</template>

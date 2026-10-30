@@ -1,0 +1,6 @@
+<template id="farmers-index-view">
+  <section class="module-view" data-module-view="farmers" data-view="index">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Farmer & Farm Registry</h2><p class="muted">Farmer profiles, household information, farm locations, landholding details, and registration status.</p></div></header>
+    <div class="panel"><div class="table-tools"><div class="search-box"><input placeholder="Search farmers..." /></div><span class="record-count">Module records</span></div><div class="table-wrap"><table><thead><tr><th>Farmer name</th><th>Sex</th><th>Birth date</th><th>Contact number</th><th>Barangay</th><th>Sitio / Purok</th><th>Actions</th></tr></thead><tbody><tr><td colspan="7">No records to display in this view yet. Use the module workspace to add records.</td></tr></tbody></table></div></div>
+  </section>
+</template>

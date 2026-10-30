@@ -1,0 +1,6 @@
+<template id="production-index-view">
+  <section class="module-view" data-module-view="production" data-view="index">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Agricultural Production & Monitoring</h2><p class="muted">Crop calendars, planting activities, harvest records, yield measurements, and field monitoring.</p></div></header>
+    <div class="panel"><div class="table-tools"><div class="search-box"><input placeholder="Search production..." /></div><span class="record-count">Module records</span></div><div class="table-wrap"><table><thead><tr><th>Farmer</th><th>Barangay</th><th>Commodity / crop</th><th>Activity</th><th>Area (hectares)</th><th>Production volume</th><th>Actions</th></tr></thead><tbody><tr><td colspan="7">No records to display in this view yet. Use the module workspace to add records.</td></tr></tbody></table></div></div>
+  </section>
+</template>

@@ -1,0 +1,6 @@
+<template id="assistance-index-view">
+  <section class="module-view" data-module-view="assistance" data-view="index">
+    <header class="record-toolbar"><div><span class="eyebrow green">AGRICULTURE MANAGEMENT</span><h2>Agricultural Assistance & Subsidy</h2><p class="muted">Assistance programs, farmer applications, beneficiary validation, approvals, and distribution records.</p></div></header>
+    <div class="panel"><div class="table-tools"><div class="search-box"><input placeholder="Search assistance..." /></div><span class="record-count">Module records</span></div><div class="table-wrap"><table><thead><tr><th>Beneficiary</th><th>Barangay</th><th>Program</th><th>Assistance type</th><th>Amount / quantity</th><th>Application date</th><th>Actions</th></tr></thead><tbody><tr><td colspan="7">No records to display in this view yet. Use the module workspace to add records.</td></tr></tbody></table></div></div>
+  </section>
+</template>
